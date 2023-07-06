@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="keywords"
+        content="calculadora de IMC, IMC online, calcular IMC, índice de massa corporal, peso ideal, saúde e peso">
+    <title>Calculadora de IMC</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/script/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de IMC</h1>
+        <div id="description">
+            <p>Bem-vindo à nossa Calculadora de IMC online, uma ferramenta útil para avaliar seu Índice de Massa
+                Corporal e
+                monitorar sua saúde e bem-estar. Nossa calculadora de IMC permite que você obtenha rapidamente uma
+                estimativa do seu IMC com base no seu peso e altura. Calcular o seu IMC é essencial para avaliar se o
+                seu
+                peso está dentro dos parâmetros saudáveis, fornecendo uma medida objetiva para entender a composição do
+                seu
+                corpo.</p>
+
+            <p>Nossa calculadora de IMC é fácil de usar e oferece resultados instantâneos. Basta inserir o seu peso e
+                altura nos campos designados, e a calculadora irá realizar os cálculos automaticamente. Além disso,
+                nossa
+                ferramenta também fornece uma interpretação dos resultados, indicando se você está abaixo do peso, no
+                peso
+                ideal, com sobrepeso ou obesidade.</p>
+
+            <p>Acompanhe as mudanças em seu Índice de Massa Corporal ao longo do tempo, definindo metas de peso
+                saudáveis e
+                monitorando seu progresso.</p>
+
+            <p><b>IPORTANTE: Lembre-se de que o IMC é uma medida inicial e é sempre recomendado consultar um
+                    profissional de saúde para uma avaliação mais detalhada.</b></p>
+
+
+        </div>
+
+        <div id="calculator">
+            <form id="imcForm">
+                <div class="form-group">
+                    <label for="altura">Altura (ex.: 1,70)</label>
+                    <input type="number" id="altura" step="0.01" placeholder="Metros" required>
+                </div>
+                <div class="form-group">
+                    <label for="peso">Peso (ex.: 69,2)</label>
+                    <input type="number" id="peso" step="0.1" placeholder="Quilos" required>
+                </div>
+                <div class="btn-group">
+                    <button type="button" onclick="calcularIMC()" class="btn">Calcular</button>
+                    <button type="button" onclick="limparCampos()" class="btn">Limpar</button>
+                </div>
+            </form>
+            <p>VEJA A INTERPRETAÇÃO DO IMC</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>IMC</th>
+                        <th>CLASSIFICAÇÃO</th>
+                        <th>OBESIDADE (GRAU)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MENOR QUE 18,5</td>
+                        <td>MAGREZA</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 18,5 E 24,9</td>
+                        <td>NORMAL</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 25,0 E 29,9</td>
+                        <td>SOBREPESO</td>
+                        <td>I</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 30,0 E 39,9</td>
+                        <td>OBESIDADE</td>
+                        <td>II</td>
+                    </tr>
+                    <tr>
+                        <td>MAIOR QUE 40,0</td>
+                        <td>OBESIDADE GRAVE</td>
+                        <td>III</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p id="resultado">Seu IMC:</p>
+            <div id="imcResultado"></div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
