@@ -1,5 +1,19 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .container {
@@ -18,6 +32,8 @@ form {
 
 .form-group {
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
@@ -26,8 +42,11 @@ label {
 }
 
 input[type=number] {
-  width: 100%;
+  width: 50%;
   padding: 5px;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .btn-group {
@@ -37,7 +56,7 @@ input[type=number] {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #39B0DF;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -73,4 +92,61 @@ th {
 
 #hiddenText {
   display: none;
+}
+
+.intro {
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 10px;
+  color: #000;
+}
+
+.title {
+  width: 100%;
+  background-color: #39B0DF;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.btnArea {
+  width: 100%;
+  display: flex;
+}
+
+.btnArea button {
+  width: 50%;
+  height: 30px;
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  background-color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button:hover {
+  font-weight: bold;
+}
+
+#calculator {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 10px;
+  flex-direction: column;
+}
+
+#imcForm {
+  width: 95%;
+  background-color: #fff;
+  border: solid 1px #39B0DF;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 3px 3px 0px rgb(57, 176, 223);
 }/*# sourceMappingURL=style.css.map */

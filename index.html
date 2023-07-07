@@ -26,6 +26,8 @@
 
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
 
 
@@ -34,38 +36,48 @@
 
 <body>
     <div class="container">
-        <h1>Calculadora de IMC</h1>
-        <div id="description">
-            <p>Bem-vindo à nossa Calculadora de IMC online, uma ferramenta útil para avaliar seu Índice de Massa
-                Corporal e
-                monitorar sua saúde e bem-estar. Nossa calculadora de IMC permite que você obtenha rapidamente uma
-                estimativa do seu IMC com base no seu peso e altura. Calcular o seu IMC é essencial para avaliar se o
-                seu
-                peso está dentro dos parâmetros saudáveis, fornecendo uma medida objetiva para entender a composição do
-                seu
-                corpo.</p>
-            <button id="readMore" onclick="exibirTexto()">Leia mais</button>
+        <div class="intro">
+            <h1 class="title">Calculadora de IMC</h1>
+            <div id="description">
+                <p>Bem-vindo à nossa <strong>Calculadora de IMC online</strong>, uma ferramenta útil para avaliar seu
+                    Índice de <strong>Massa
+                        Corporal</strong> e
+                    monitorar sua saúde e bem-estar. Nossa calculadora de IMC permite que você obtenha rapidamente uma
+                    estimativa do seu <strong>IMC</strong> com base no seu peso e altura. <strong>Calcular o seu
+                        IMC</strong> é essencial para avaliar se
+                    o
+                    seu
+                    peso está dentro dos parâmetros saudáveis, fornecendo uma medida objetiva para entender a composição
+                    do
+                    seu
+                    corpo.</p>
+                <div class="btnArea"><button id="readMore" onclick="exibirTexto()">Leia mais</button></div>
 
-            <div id="hiddenText">
-                <p>Nossa calculadora de IMC é fácil de usar e oferece resultados instantâneos. Basta inserir o seu peso
-                    e
-                    altura nos campos designados, e a calculadora irá realizar os cálculos automaticamente. Além disso,
-                    nossa
-                    ferramenta também fornece uma interpretação dos resultados, indicando se você está abaixo do peso,
-                    no
-                    peso
-                    ideal, com sobrepeso ou obesidade.</p>
+                <div id="hiddenText">
+                    <p>Nossa calculadora de IMC é fácil de usar e oferece resultados instantâneos. Basta inserir o seu
+                        peso
+                        e
+                        altura nos campos designados, e a calculadora irá realizar os cálculos automaticamente. Além
+                        disso,
+                        nossa
+                        ferramenta também fornece uma interpretação dos resultados, indicando se você está abaixo do
+                        peso,
+                        no
+                        peso
+                        ideal, com sobrepeso ou obesidade.</p>
 
-                <p>Acompanhe as mudanças em seu Índice de Massa Corporal ao longo do tempo, definindo metas de peso
-                    saudáveis e
-                    monitorando seu progresso.</p>
+                    <p>Acompanhe as mudanças em seu Índice de Massa Corporal ao longo do tempo, definindo metas de peso
+                        saudáveis e
+                        monitorando seu progresso.</p>
 
-                <p><b>IMPORTANTE: Lembre-se de que o IMC é uma medida inicial e é sempre recomendado consultar um
-                        profissional de saúde para uma avaliação mais detalhada.</b></p>
+                    <p><b>IMPORTANTE: Lembre-se de que o IMC é uma medida inicial e é sempre recomendado consultar um
+                            profissional de saúde para uma avaliação mais detalhada.</b></p>
+                </div>
+
+
             </div>
-
-
         </div>
+
 
         <div id="calculator">
             <form id="imcForm">
@@ -81,6 +93,8 @@
                     <button type="button" onclick="calcularIMC()" class="btn">Calcular</button>
                     <button type="button" onclick="limparCampos()" class="btn">Limpar</button>
                 </div>
+                <p id="resultado">Seu IMC:</p>
+                <div id="imcResultado"></div>
             </form>
             <p>VEJA A INTERPRETAÇÃO DO IMC</p>
             <table>
@@ -119,8 +133,7 @@
                     </tr>
                 </tbody>
             </table>
-            <p id="resultado">Seu IMC:</p>
-            <div id="imcResultado"></div>
+
 
         </div>
 
