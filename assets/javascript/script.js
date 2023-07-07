@@ -14,3 +14,19 @@ function limparCampos() {
     document.getElementById('imcForm').reset();
     document.getElementById('imcResultado').innerText = "";
 }
+
+function exibirTexto() {
+    var texto = document.getElementById("hiddenText");
+    var botao = document.getElementById("readMore");
+
+
+    if (texto.style.display === "none") {
+        texto.style.display = "block";
+        botao.innerText = "Ocultar";
+
+    } else {
+        texto.style.display = "none";
+        botao.innerText = "Leia mais";
+
+    }
+}

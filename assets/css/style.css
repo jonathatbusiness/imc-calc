@@ -69,4 +69,8 @@ th {
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
+}
+
+#hiddenText {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
